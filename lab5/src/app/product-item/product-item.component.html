@@ -1,0 +1,30 @@
+<div class = "container">
+    <h2>Products</h2>
+    <div *ngFor="let product of products; let i = index" class = "box">
+        <div class="box3">
+            <img *ngIf="product.image" class="img-product" [src]="product.image" alt="" />
+        </div>
+        <div class="box2">
+            <strong><a id="ssylka" target="blank" [title]="product.name" [href]="product.link">{{product['name']}}</a></strong>
+            <p><strong>Description:</strong> {{product.description}}</p>
+            <p><strong>Rating:</strong> {{product.rating}}</p>
+            <div class = "like">
+                <p><strong>Likes: {{product.like}}</strong></p>
+            </div>
+            <div class="btns-box">
+                <button (click)="share(product.link, product.description)" class="share-button">
+                    Share
+                </button>
+                <div *ngIf="product.share" class="share">
+                    <a href="https://t.me/share/url?url={{product.link}}" target="_blank"><img src = "./assets/images/telegram.png" class="icon"></a>
+                </div>
+                <app-product-alerts [product]="product" (notify)="onNotify()">
+                </app-product-alerts>
+            </div>  
+            <div class="btns-box">
+                <button class="share-button" (click)="like(product)">Like</button>
+                <button class="share-button" (click)="remove(product)">Remove</button>
+            </div>
+        </div>
+    </div>
+</div>

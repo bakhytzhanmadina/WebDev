@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(35,52,72,255);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
+    padding: 10px;
+    padding-left:40px;
+    padding-right: 40px;
+}
+
+input {
+    outline: none;
+    margin-left: auto;
+}
+
+span {
+    color: white;
+    margin-right: 0;
+}
+
+img {
+    margin-left: auto;
+}
+
+button {
+    background-color:rgba(35,52,72,255);
+    color: white;
+    height:40px;
+    width: 100px;
+    margin-right: 30px;
+    border:none;
+    outline: none;
+}
+
+button:hover {
+    border: 2px solid white;
+}

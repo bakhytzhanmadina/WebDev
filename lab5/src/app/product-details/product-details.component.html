@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>{{product.name}}</h1>
+    <div class="box">
+        <div *ngFor="let image of product.image" class="box2">
+            <img src="{{image}}" alt="Hello" height="150px">
+        </div>
+    </div>
+    <p><strong>Description:</strong> {{product.description}}</p>
+</div>

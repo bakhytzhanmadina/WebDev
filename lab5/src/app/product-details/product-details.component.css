@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
+    padding: 10px;
+    width: 900px;
+}
+
+h1 {
+    padding: 20px;
+    width: 600px;
+    text-align: center;
+    text-decoration: underline;
+    border-bottom: 2px solid rgba(161, 161, 161, 0.5);
+}
+
+p {
+    width:600px;
+}
+
+.box2 {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    padding: 30px;
+    border-bottom: 2px solid rgba(151, 151, 151, 0.5);
+}

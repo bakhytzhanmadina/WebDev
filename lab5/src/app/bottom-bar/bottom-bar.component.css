@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(35,52,72,255);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0px;
+}
+
+a {
+    color:white;
+}
